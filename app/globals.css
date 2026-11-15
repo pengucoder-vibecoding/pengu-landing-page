@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0f1223;
+  --color-surface: #1a1f3d;
+  --color-border: #2c3366;
+  --color-text: #ffffff;
+  --color-muted: #a9adcf;
+  --color-brand: #b459f8;
+  --color-accent: #fba230;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
